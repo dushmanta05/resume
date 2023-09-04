@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% Author : Dushmanta Behera
+% Based off of: https://github.com/dushmanta05/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%  RESUME STARTS HERE  %
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+   \textbf{\Huge \scshape Dushmanta Behera} \\ \vspace{1pt}
+    \small 
+    \raisebox{-0.05\height}{\faPhone*} \href{tel:+919556515251}{{(+91) 9556515251}} $|$ 
+    \raisebox{-0.05\height}{\faEnvelope} \href{mailto:dushmanta0511@gmail.com}{{dushmanta.dev@gmail.com}} $|$ 
+    \raisebox{-0.05\height}{\faGithub} \href{https://github.com/dushmanta05}{{\underline{GitHub}}}
+     $|$ 
+    \raisebox{-0.05\height}{\faLinkedin} \href{https://www.linkedin.com/in/dushmanta05/}{{\underline{LinkedIn}}}
+    $|$ 
+    \raisebox{-0.05\height}{\faGlobe} \href{https://dushmanta.is-a.dev/}{{\underline{Portfolio}}}
+    
+    
+\end{center}
+
+\section{Profile}
+    
+Front-end web developer passionate and skilled in \textbf{HTML}, \textbf{CSS}, \textbf{JavaScript}, \textbf{Typescript}, \textbf{React}, \textbf{Bootstrap}, \textbf{Material UI}, \textbf{Redux}, and other modern technologies. Seeking a challenging position in the tech sector where I can make use of my technical skills and drive innovation and growth.
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+%-------------------------------------------
+  \resumeSubheading
+      {React.js Developer}{Dec 2022 - Apr 2023}
+      { \href{https://sanctuarystore.co.nz/} {Sanctuary Store}}{Invicta Ltd}
+      \resumeItemListStart
+       \resumeItem{Led the development of the product page of an e-commerce website, optimizing user experince.}
+        \resumeItem{Collaborated with design team to integrate visually captivating product displays, enhancing user engagement.}
+         \resumeItem{Implemented user-centric CRUD operations enhancing interactive functionality.}
+         \resumeItem{Ensured on-time delivery of project requirements, maintaining efficiency and meeting deadlines.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\resumeItemListStart
+            \resumeItem{\textbf{Languages}{: HTML5, CSS3, JavaScript, TypeScript, Markdown}}
+            \resumeItem{\textbf{Technologies}{: React, Bootstrap, Redux, Material UI, TailwindCSS, Styled-Components}}
+            \resumeItem{\textbf{Other tools}{: GraphQL, Git, GitHub, Postman, Shopify, Firebase, ViteJs, Webpack, npm/pnpm,  VScode etc}}
+\resumeItemListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Fit Bull - Gym Exercises}}
+          {{ {\small {\faGithub} \href{https://github.com/dushmanta05/fit-bull}{\underline{GitHub}}} $|$ {\small {\faGlobe} \href{https://fit-bull.netlify.app/}{{\underline{Website}}}}}}
+          \resumeItemListStart
+            \resumeItem{Developed a gym exercise web application with search functionalities}
+            \resumeItem{Utilized components for customization, implemented navigation, and ensured optimal performance with efficient bundling techniques.}
+            \resumeItem{Successfully integrated an external API, seamlessly fetching and displaying data to enrich the application's content and functionality.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{FreshMeal Shop}}
+          {{ {\small {\faGithub} \href{https://github.com/dushmanta05/fresh-kart}{\underline{GitHub}}} $|$ {\small {\faGlobe} \href{https://fresh-kart.vercel.app/}{{\underline{Website}}}}}}
+          \resumeItemListStart
+            \resumeItem{Developed the front-end of a food ordering platform, creating a seamless user experience.}
+            \resumeItem{Enhanced user engagement through a responsive carousel displaying top products.}
+            \resumeItem{ Ensured device compatibility with a responsive design strategy that adapts to various screen sizes using media queries.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Freelancer Portfolio Web App}}
+          {{ {\small {\faGithub} \href{https://github.com/dushmanta05/byteverse}{\underline{GitHub}}} $|$ {\small {\faGlobe} \href{https://byteverse.vercel.app/}{{\underline{Website}}}}}}
+          \resumeItemListStart
+            \resumeItem{Developed a website showcasing freelance work to potential clients.}
+            \resumeItem{Designed and implemented responsive layouts, ensuring seamless browsing across devices.}
+            \resumeItem{ Included distinct sections for portfolio, blogs, and multiple services, offering a range of expertise.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%%
+%-----------EDUCATION-----------
+\section{Education and Coursework} 
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Complete Web Development Boot-camp
+}{ Udemy}
+      { Fullstack web development course by Dr.Angela Yu}{July 2023 -- Ongoing}
+      \resumeItemListStart
+        \resumeItem{Relevant Learnings: HTML, CSS, Bootstrap, JavaScript, ES6, React, yet to learn (jQuery, Node.js, Express.js, MongoDB etc).}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Veer Surendra Sai University of Technology}{Sambalpur, Odisha}
+      {Bachelor Of Technology in Electrical Engineering}{Aug 2015 -- June 2019}
+       \resumeItemListStart
+        \resumeItem{Cumulative GPA : \textbf{6.61/10.0}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Others}
+\begin{itemize}
+    \resumeItem{Contributed to a few \textbf{open-source} project like \href{https://github.com/EddieHubCommunity/BioDrop}{{\underline{\textbf{BioDrop}}}}, \href{https://github.com/is-a-dev/register}{{\underline{\textbf{is-a-dev}}}} and \href{https://github.com/simple-icons/simple-icons}{{\underline{\textbf{simple-icons}}}}.}
+    \item {Solved 103 basic problems of JavaScript on \href{https://leetcode.com/dushmanta05/}{{\underline{\textbf{LeetCode}}}}}.
+\end{itemize}
+
+%-------------------------------------------
+\end{document}

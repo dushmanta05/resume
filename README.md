@@ -1,2 +1,2 @@
-# resume
-My Professional Resume - A GitHub repository showcasing my updated resume in PDF format.
+# Resume
+My professional resume in PDF format, along with the LaTeX source code used to create it
