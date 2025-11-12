@@ -1,10 +1,10 @@
 %-------------------------
-% Resume in Latex
+% Resume in LaTeX
 % Author : Dushmanta Behera
 % Based off of: https://github.com/dushmanta05/resume
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[a4paper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -39,6 +39,7 @@
 \setlength{\tabcolsep}{0in}
 \setlength{\footskip}{4.08003pt}
 
+% Section title formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
@@ -50,19 +51,24 @@
 \newcommand{\resumeItem}[1]{
   \item\small{{#1 \vspace{-2pt}}}
 }
+
+% Company, Position, Location, Date
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      {\small #3} & {\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+      \textbf{#1} & {\small \textit{#4}} \\   % Company name (bold), Date (italic)
+      {\small \textit{\normalsize #3}} & {\small #2} \\   % Position (italic and slightly larger)
+    \end{tabular*}\vspace{-8pt}
 }
+
+% Role under same company
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      {\small #1} & {\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+      {\small \textit{\normalsize #1}} & {\small \textit{#2}} \\   % Italic position and italic date
+    \end{tabular*}\vspace{-8pt}
 }
+
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -81,7 +87,7 @@
 
 %----------HEADING----------
 \begin{center}
-   \textbf{\Huge \scshape Dushmanta Behera} \\ \vspace{1pt}
+   \textbf{\fontsize{20pt}{22pt}\selectfont Dushmanta Behera} \\ \vspace{1pt}
     \small
     \raisebox{-0.05\height}{\faPhone*} \href{tel:+919556515251}{{(+91) 9556515251}} $|$
     \raisebox{-0.05\height}{\faEnvelope} \href{mailto:dushmanta0511@gmail.com}{{dushmanta0511@gmail.com}} $|$
@@ -97,48 +103,48 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-    {HyScaler}{}
-    {SDE-1}{Aug 2025 - Present}
+    {HyScaler}{}{SDE-1}{Aug 2025 -- Present}
     \resumeItemListStart
-        \resumeItem{Integrated Gemini, Amazon Bedrock, and OpenRouter into Gen AI applications with structured outputs; developed RAG microservice with Postgres + pgvector for 75–80\% improvement in context-aware responses.}
-        \resumeItem{Implemented document extraction pipeline using Docling + Unstructured with Hugging Face embeddings; streamlined bug triage and sprint processes into a single automated workflow.}
+        \resumeItem{Developed a \textbf{RAG microservice} using \textbf{Postgres + pgvector}, achieving \textbf{75–80\% improvement} in context-aware responses.}
+        \resumeItem{Implemented document extraction pipeline using \textbf{Docling, Kreuzberg, and Unstructured} with \textbf{Hugging Face embeddings}, achieving \textbf{90\% similarity} in semantic search.}
+        \resumeItem{Configured \textbf{Celery with Redis} for offloading document processing, enabling \textbf{parallel extraction} and optimized resource usage; integrated \textbf{Flower} for task monitoring.}
     \resumeItemListEnd
 
 \resumeSubSubheading
-    {Junior Software Developer}{Aug 2024 - July 2025}
+    {Junior Software Developer}{Aug 2024 -- July 2025}
     \resumeItemListStart
-        \resumeItem{Built ADP Marketplace onboarding microservice with employer lifecycle management.}
-        \resumeItem{Optimized large file processing with Node.js worker threads, reducing downtime to zero.}
-        \resumeItem{Improved query performance with MongoDB aggregation pipelines, removing timeouts.}
-        \resumeItem{Automated monthly emails and membership activation/deactivation via cron jobs, removing manual CSV workflows.}
+        \resumeItem{Built and deployed a microservice to list application on \textbf{ADP Marketplace}, enabling employer lifecycle management, bringing \textbf{25 new employers}.}
+        \resumeItem{Optimized large file processing with \textbf{Node.js worker threads}, achieving \textbf{100\% uptime}.}
+        \resumeItem{Improved query performance using \textbf{MongoDB aggregation pipelines}, eliminating timeouts.}
+        \resumeItem{Automated monthly emails and membership workflows via \textbf{cron jobs}, removing manual CSV processes.}
+        \resumeItem{Integrated \textbf{Gemini, Amazon Bedrock, and OpenRouter} with structured data output for downstream processing.}
     \resumeItemListEnd
 
 \resumeSubSubheading
-    {Software Developer Apprentice}{Jan 2024 - July 2024}
+    {Software Developer Apprentice}{Jan 2024 -- July 2024}
     \resumeItemListStart
-        \resumeItem{Implemented Spatie Role-Permission package and Laravel queues for scalable task processing.}
-        \resumeItem{Developed dynamic forms and admin features in Laravel with Blade + Livewire.}
+        \resumeItem{Implemented \textbf{Spatie Role-Permission package} for scalable role management in CRM.}
+        \resumeItem{Configured \textbf{Laravel jobs and queues} for background processing of external APIs and long-running tasks.}
+        \resumeItem{Integrated \textbf{GraphQL endpoints} for flexible querying and improved client-server communication.}
     \resumeItemListEnd
 
 \resumeSubheading
-    {Infophy (Formerly Webysis)}{}
-    {Frontend Web Developer}{Nov 2023 - Jan 2024}
+    {Infophy (Formerly Webysis)}{}{Frontend Web Developer}{Nov 2023 -- Jan 2024}
     \resumeItemListStart
-        \resumeItem{Integrated WooCommerce REST APIs for dynamic product display.}
-        \resumeItem{Managed application state with Redux for complex UI interactions.}
+        \resumeItem{Integrated \textbf{WooCommerce REST APIs} for dynamic product display.}
+        \resumeItem{Managed application state with \textbf{Redux} for complex UI interactions.}
     \resumeItemListEnd
 
 \resumeSubSubheading
-    {Frontend Developer Intern}{Sept 2023 - Nov 2023}
+    {Frontend Developer Intern}{Sept 2023 -- Nov 2023}
     \resumeItemListStart
         \resumeItem{Designed responsive landing page and seller dashboard with deployment workflows.}
     \resumeItemListEnd
 
 \resumeSubheading
-    {Invicta Ltd}{}
-    {Frontend Developer}{Dec 2023 - Mar 2024}
+    {Invicta Ltd}{}{Frontend Developer}{Dec 2023 -- Mar 2024}
     \resumeItemListStart
-        \resumeItem{Integrated Shopify GraphQL APIs for product data and checkout functions.}
+        \resumeItem{Integrated \textbf{Shopify GraphQL APIs} for product data and checkout functions.}
         \resumeItem{Built responsive product pages with clean UI across devices.}
     \resumeItemListEnd
 
@@ -150,28 +156,20 @@
     \resumeItem{\textbf{Languages}{: HTML/CSS, JavaScript, TypeScript, Python, PHP, Markdown}}
     \resumeItem{\textbf{Frameworks \& Libraries}{: Node.js, Express.js, Sails.js, NestJS, FastAPI, React, Next.js, Tailwind, Laravel, FilamentPHP, GraphQL, Astro}}
     \resumeItem{\textbf{Databases}{: PostgreSQL, MongoDB, pgvector, MySQL}}
-    \resumeItem{\textbf{Tools \& Platforms}{: Git, GitHub, Docker, GitLab, VPS, Nginx, Caddy}}
-\resumeItemListEnd
-
-%-----------OPEN SOURCE CONTRIBUTIONS-----------
-\section{Open Source Contributions}
-\resumeItemListStart
-    \resumeItem{LangChain Docling Resources Fix \hfill \href{https://github.com/langchain-ai/langchain/pull/33001}{\underline{Pull Request} \faGithub}}
-    \resumeItem{Brave Browser UI Fix \hfill \href{https://github.com/brave/brave-core/pull/30391}{\underline{Pull Request} \faGithub}}
-    \resumeItem{Google Gemini PHP Client Documentation Fix \hfill \href{https://github.com/google-gemini-php/client/pull/109}{\underline{Pull Request} \faGithub}}
+    \resumeItem{\textbf{Tools \& Platforms}{: Git, GitHub, GitHub Actions, Docker, GitLab, VPS, Nginx, Caddy, Celery}}
 \resumeItemListEnd
 
 %-----------OTHER ACTIVITIES-----------
 \section{Other Activities}
 \resumeItemListStart
-    \resumeItem{Technical Blogging \hfill \href{https://dushmanta.dev/blog}{\underline{Link} \faGlobe}}
-    \resumeItem{Building Developers Odisha Community \hfill \href{https://odisha.dev}{\underline{Link} \faGlobe}}
+    \resumeItem{\textbf{Open Source Contributions:} Contributed to repositories like \textbf{Brave}, \textbf{LangChain}, \textbf{Stanford NLP} etc. -- \href{https://dushmanta.dev/oss-contributions}{\underline{dushmanta.dev/oss-contributions}}}
+    \resumeItem{\textbf{Technical Blogging:} Write about things I learn and build to help others -- \href{https://dushmanta.dev/blog}{\underline{dushmanta.dev/blog}}}
 \resumeItemListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
-  \resumeSubheading
+ \resumeSubheading
     {\href{https://vssut.ac.in}{VSSUT, Burla}}{Burla, Odisha}
     {Bachelor of Technology in Electrical Engineering}{2015 -- 2019}
 \resumeSubHeadingListEnd
