@@ -1,0 +1,172 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Dushmanta Behera
+% Based off of: https://github.com/dushmanta05/resume
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.08003pt}
+
+% Section title formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+% Company, Position, Location, Date
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small \textit{#4}} \\   % Company name (bold), Date (italic)
+      {\small \textit{\normalsize #3}} & {\small #2} \\   % Position (italic and slightly larger)
+    \end{tabular*}\vspace{-8pt}
+}
+
+% Role under same company
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      {\small \textit{\normalsize #1}} & {\small \textit{#2}} \\   % Italic position and italic date
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small#2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+   \textbf{\fontsize{20pt}{22pt}\selectfont Dushmanta Behera} \\ \vspace{1pt}
+    \small
+    \raisebox{-0.05\height}{\faPhone*} \href{tel:+919556515251}{{(+91) 9556515251}} $|$
+    \raisebox{-0.05\height}{\faEnvelope} \href{mailto:dushmanta0511@gmail.com}{{dushmanta0511@gmail.com}} $|$
+    \raisebox{-0.05\height}{\faGithub} \href{https://github.com/dushmanta05}{{\underline{GitHub}}}
+     $|$
+    \raisebox{-0.05\height}{\faLinkedin} \href{https://www.linkedin.com/in/dushmanta05/}{{\underline{LinkedIn}}}
+    $|$
+    \raisebox{-0.05\height}{\faGlobe} \href{https://dushmanta.dev/}{{\underline{Portfolio}}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {HyScaler}{}{SDE-1}{Aug 2025 -- Present}
+    \resumeItemListStart
+        \resumeItem{Developed a \textbf{RAG microservice} using \textbf{Postgres + pgvector}, achieving \textbf{75–80\% improvement} in context-aware responses.}
+        \resumeItem{Implemented document extraction pipeline using \textbf{Docling, Kreuzberg, and Unstructured} with \textbf{Hugging Face embeddings}, achieving \textbf{90\% similarity} in semantic search.}
+        \resumeItem{Configured \textbf{Celery with Redis} for offloading document processing, enabling \textbf{parallel extraction} and optimized resource usage; integrated \textbf{Flower} for task monitoring.}
+        \resumeItem{Designed an aggregated cache layer using \textbf{Redis HSET/ZSET} data structures in place of standard key-value caching, cutting cache lookup time by \textbf{~40\%}.}
+        \resumeItem{Implemented \textbf{SAML-based Single Sign-On (SSO)} to authenticate users into a partner health-service platform via \textbf{IdP-issued assertions}, removing the need for separate credential entry.}
+        \resumeItem{Built and deployed \textbf{FastAPI} backend microservices exposing \textbf{RESTful APIs} for the document text-extraction pipeline, cutting manual review time by \textbf{~50\%}.}
+    \resumeItemListEnd
+
+\resumeSubSubheading
+    {Junior Software Developer}{Aug 2024 -- July 2025}
+    \resumeItemListStart
+        \resumeItem{Improved query performance using \textbf{MongoDB aggregation pipelines} on a large prescription dataset, implementing \textbf{pagination} to eliminate load timeouts.}
+        \resumeItem{Automated monthly emails and membership workflows via \textbf{cron jobs}, using \textbf{Node.js worker threads} to parse and process large-scale \textbf{CSV data}, removing manual processes and achieving \textbf{100\% uptime}.}
+        \resumeItem{Integrated \textbf{Gemini, Amazon Bedrock, and OpenRouter} with structured data output for downstream processing.}
+        \resumeItem{Built and deployed a microservice to list application on \textbf{ADP Marketplace}, enabling employer lifecycle management, bringing \textbf{25 new employers}.}
+        \resumeItem{Set up a lightweight \textbf{CI/CD pipeline} using \textbf{GitHub webhooks} to automatically deploy projects to a \textbf{VPS} on every push, eliminating manual deployment steps.}
+    \resumeItemListEnd
+
+\resumeSubSubheading
+    {Software Developer Apprentice}{Jan 2024 -- July 2024}
+    \resumeItemListStart
+        \resumeItem{Implemented \textbf{Spatie Role-Permission package} and configured \textbf{Laravel jobs/queues} for scalable role management and background API processing in CRM.}
+        \resumeItem{Integrated \textbf{GraphQL endpoints} for flexible querying and improved client-server communication.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Infophy (Formerly Webysis)}{}{Frontend Developer Intern}{Sept 2023 -- Jan 2024}
+    \resumeItemListStart
+        \resumeItem{Designed responsive landing and product pages for a multi-vendor \textbf{WordPress + WooCommerce} e-commerce platform, improving product display and search speed.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Invicta Ltd}{}{Frontend Developer}{Dec 2023 -- Mar 2024}
+    \resumeItemListStart
+        \resumeItem{Integrated \textbf{Shopify GraphQL APIs} for product data and checkout functions.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\resumeItemListStart
+    \resumeItem{\textbf{Languages}{: Python, JavaScript, TypeScript, HTML/CSS, PHP, Markdown}}
+    \resumeItem{\textbf{Frameworks \& Libraries}{: FastAPI, Node.js, NestJS, React, Next.js, Tailwind, Laravel, GraphQL, Astro}}
+    \resumeItem{\textbf{Databases}{: PostgreSQL, MongoDB, pgvector, MySQL}}
+    \resumeItem{\textbf{Tools \& Platforms}{: Claude Code, Antigravity CLI, OpenCode, Git, GitHub, GitHub Actions, Docker, GitLab, VPS, Nginx, Caddy, Celery}}
+\resumeItemListEnd
+
+%-----------OTHER ACTIVITIES-----------
+\section{Other Activities}
+\resumeItemListStart
+    \resumeItem{\textbf{Open Source Contributions:} Contributed to repositories like \textbf{Brave}, \textbf{LangChain}, \textbf{Stanford NLP}, \textbf{LangChain} etc. -- \href{https://dushmanta.dev/oss-contributions}{\underline{dushmanta.dev/oss-contributions}}}
+    \resumeItem{\textbf{Technical Blogging:} Write about things I learn and build to help others -- \href{https://dushmanta.dev/blog}{\underline{dushmanta.dev/blog}}}
+\resumeItemListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+ \resumeSubheading
+    {\href{https://vssut.ac.in}{VSSUT, Burla}}{Burla, Odisha}
+    {Bachelor of Technology in Electrical Engineering}{2015 -- 2019}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
