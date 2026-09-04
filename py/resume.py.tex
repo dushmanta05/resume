@@ -54,7 +54,7 @@
 
 % Company, Position, Location, Date
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & {\small \textit{#4}} \\   % Company name (bold), Date (italic)
       {\small \textit{\normalsize #3}} & {\small #2} \\   % Position (italic and slightly larger)
@@ -108,9 +108,9 @@
         \resumeItem{Developed a \textbf{RAG microservice} using \textbf{Postgres + pgvector}, achieving \textbf{75–80\% improvement} in context-aware responses.}
         \resumeItem{Implemented document extraction pipeline using \textbf{Docling, Kreuzberg, and Unstructured} with \textbf{Hugging Face embeddings}, achieving \textbf{90\% similarity} in semantic search.}
         \resumeItem{Configured \textbf{Celery with Redis} for offloading document processing, enabling \textbf{parallel extraction} and optimized resource usage; integrated \textbf{Flower} for task monitoring.}
+        \resumeItem{Built and deployed \textbf{FastAPI} backend microservices exposing \textbf{RESTful APIs} for the document text-extraction pipeline, cutting manual review time by \textbf{~50\%}.}
         \resumeItem{Designed an aggregated cache layer using \textbf{Redis HSET/ZSET} data structures in place of standard key-value caching, cutting cache lookup time by \textbf{~40\%}.}
         \resumeItem{Implemented \textbf{SAML-based Single Sign-On (SSO)} to authenticate users into a partner health-service platform via \textbf{IdP-issued assertions}, removing the need for separate credential entry.}
-        \resumeItem{Built and deployed \textbf{FastAPI} backend microservices exposing \textbf{RESTful APIs} for the document text-extraction pipeline, cutting manual review time by \textbf{~50\%}.}
     \resumeItemListEnd
 
 \resumeSubSubheading
@@ -131,7 +131,7 @@
     \resumeItemListEnd
 
 \resumeSubheading
-    {Infophy (Formerly Webysis)}{}{Frontend Developer Intern}{Sept 2023 -- Jan 2024}
+    {Infophy}{}{Frontend Developer Intern}{Sept 2023 -- Jan 2024}
     \resumeItemListStart
         \resumeItem{Designed responsive landing and product pages for a multi-vendor \textbf{WordPress + WooCommerce} e-commerce platform, improving product display and search speed.}
     \resumeItemListEnd

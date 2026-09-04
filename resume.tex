@@ -54,7 +54,7 @@
 
 % Company, Position, Location, Date
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & {\small \textit{#4}} \\   % Company name (bold), Date (italic)
       {\small \textit{\normalsize #3}} & {\small #2} \\   % Position (italic and slightly larger)
@@ -105,48 +105,41 @@
 \resumeSubheading
     {HyScaler}{}{SDE-1}{Aug 2025 -- Present}
     \resumeItemListStart
-        \resumeItem{Integrated \textbf{Amadeus APIs} for hotel, flight, and event booking and management and implemented \textbf{CASL-based abilities} to remove manual authorization checks and improve \textbf{API response performance}.}
         \resumeItem{Developed a \textbf{RAG microservice} using \textbf{Postgres + pgvector}, achieving \textbf{75–80\% improvement} in context-aware responses.}
         \resumeItem{Implemented document extraction pipeline using \textbf{Docling, Kreuzberg, and Unstructured} with \textbf{Hugging Face embeddings}, achieving \textbf{90\% similarity} in semantic search.}
         \resumeItem{Configured \textbf{Celery with Redis} for offloading document processing, enabling \textbf{parallel extraction} and optimized resource usage; integrated \textbf{Flower} for task monitoring.}
+        \resumeItem{Built and deployed \textbf{FastAPI} backend microservices exposing \textbf{RESTful APIs} for the document text-extraction pipeline, cutting manual review time by \textbf{~50\%}.}
+        \resumeItem{Designed an aggregated cache layer using \textbf{Redis HSET/ZSET} data structures in place of standard key-value caching, cutting cache lookup time by \textbf{~40\%}.}
+        \resumeItem{Implemented \textbf{SAML-based Single Sign-On (SSO)} to authenticate users into a partner health-service platform via \textbf{IdP-issued assertions}, removing the need for separate credential entry.}
     \resumeItemListEnd
 
 \resumeSubSubheading
     {Junior Software Developer}{Aug 2024 -- July 2025}
     \resumeItemListStart
-        \resumeItem{Built and deployed a microservice to list application on \textbf{ADP Marketplace}, enabling employer lifecycle management, bringing \textbf{25 new employers}.}
-        \resumeItem{Optimized large file processing with \textbf{Node.js worker threads}, achieving \textbf{100\% uptime}.}
-        \resumeItem{Improved query performance using \textbf{MongoDB aggregation pipelines}, eliminating timeouts.}
-        \resumeItem{Automated monthly emails and membership workflows via \textbf{cron jobs}, removing manual CSV processes.}
+        \resumeItem{Improved query performance using \textbf{MongoDB aggregation pipelines} on a large prescription dataset, implementing \textbf{pagination} to eliminate load timeouts.}
+        \resumeItem{Automated monthly emails and membership workflows via \textbf{cron jobs}, using \textbf{Node.js worker threads} to parse and process large-scale \textbf{CSV data}, removing manual processes and achieving \textbf{100\% uptime}.}
         \resumeItem{Integrated \textbf{Gemini, Amazon Bedrock, and OpenRouter} with structured data output for downstream processing.}
+        \resumeItem{Built and deployed a microservice to list application on \textbf{ADP Marketplace}, enabling employer lifecycle management, bringing \textbf{25 new employers}.}
+        \resumeItem{Set up a lightweight \textbf{CI/CD pipeline} using \textbf{GitHub webhooks} to automatically deploy projects to a \textbf{VPS} on every push, eliminating manual deployment steps.}
     \resumeItemListEnd
 
 \resumeSubSubheading
     {Software Developer Apprentice}{Jan 2024 -- July 2024}
     \resumeItemListStart
-        \resumeItem{Implemented \textbf{Spatie Role-Permission package} for scalable role management in CRM.}
-        \resumeItem{Configured \textbf{Laravel jobs and queues} for background processing of external APIs and long-running tasks.}
+        \resumeItem{Implemented \textbf{Spatie Role-Permission package} and configured \textbf{Laravel jobs/queues} for scalable role management and background API processing in CRM.}
         \resumeItem{Integrated \textbf{GraphQL endpoints} for flexible querying and improved client-server communication.}
     \resumeItemListEnd
 
 \resumeSubheading
-    {Infophy (Formerly Webysis)}{}{Frontend Web Developer}{Nov 2023 -- Jan 2024}
+    {Infophy}{}{Frontend Developer Intern}{Sept 2023 -- Jan 2024}
     \resumeItemListStart
-        \resumeItem{Integrated \textbf{WooCommerce REST APIs} for dynamic product display.}
-        \resumeItem{Managed application state with \textbf{Redux} for complex UI interactions.}
-    \resumeItemListEnd
-
-\resumeSubSubheading
-    {Frontend Developer Intern}{Sept 2023 -- Nov 2023}
-    \resumeItemListStart
-        \resumeItem{Designed responsive landing page and seller dashboard with deployment workflows.}
+        \resumeItem{Designed responsive landing and product pages for a multi-vendor \textbf{WordPress + WooCommerce} e-commerce platform, improving product display and search speed.}
     \resumeItemListEnd
 
 \resumeSubheading
     {Invicta Ltd}{}{Frontend Developer}{Dec 2023 -- Mar 2024}
     \resumeItemListStart
         \resumeItem{Integrated \textbf{Shopify GraphQL APIs} for product data and checkout functions.}
-        \resumeItem{Built responsive product pages with clean UI across devices.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -154,10 +147,10 @@
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
 \resumeItemListStart
-    \resumeItem{\textbf{Languages}{: HTML/CSS, JavaScript, TypeScript, Python, PHP, Markdown}}
-    \resumeItem{\textbf{Frameworks \& Libraries}{: Node.js, Express.js, Sails.js, NestJS, FastAPI, React, Next.js, Tailwind, Laravel, FilamentPHP, GraphQL, Astro}}
+    \resumeItem{\textbf{Languages}{: Python, JavaScript, TypeScript, HTML/CSS, PHP, Markdown}}
+    \resumeItem{\textbf{Frameworks \& Libraries}{: FastAPI, Node.js, NestJS, React, Next.js, Tailwind, Laravel, GraphQL, Astro}}
     \resumeItem{\textbf{Databases}{: PostgreSQL, MongoDB, pgvector, MySQL}}
-    \resumeItem{\textbf{Tools \& Platforms}{: Git, GitHub, GitHub Actions, Docker, GitLab, VPS, Nginx, Caddy, Celery}}
+    \resumeItem{\textbf{Tools \& Platforms}{: Claude Code, Antigravity CLI, OpenCode, Git, GitHub, GitHub Actions, Docker, GitLab, VPS, Nginx, Caddy, Celery}}
 \resumeItemListEnd
 
 %-----------OTHER ACTIVITIES-----------
